@@ -5,51 +5,54 @@ body{
     padding: 0;
     margin: 0;
 }
+
+/*==== head part ====*/
 .head{
     height: 677px;
-    width: 1440px;
-    left: 0px;
-    top: 0px;
-    border-radius: 0px;
     background: #2D25A0;
-
-
+    display: flex;
 }
 
+.head:hover{
+    background: #948fdb;
+    transition: 1s ease;
+}
+.left-head{
+    width: 50%;
+    padding-top: 207px;
+    margin-left: 156px;
+    height: 175px;
+}
 .left-head h1{
     font-size: 64px;
-    width: 485px;
-    position: absolute;
-    height: 230px;
-    top: 207px;
-    left: 156px;
     font-weight: 700;
     line-height: 80px;
-    letter-spacing: 0px;
+    width: 470px;
+   
 }
 .left-head a{
     color: #fff;
-    position: absolute;
-    left: 156px;
-    top: 464px;
-    border-radius: 0px;
     padding: 10px 24px;
     background: #E02C6D;
     text-decoration: none;
     margin-top: 27px;
 }
 .right-head{
-    position: absolute;
-    width: 556px;
-    height: 438px;
-    left: 743px;
-    top: 153px;
+    width: 50%;
+    margin-top: 153px;
 }
 .right-head img{
     width: 556px;
     height: 438px;
 }
-/* main-body */
+
+.right-head img:hover {
+    transform: scale(120%);
+    transition: 1s ease;
+}
+
+/*==== main-body ====*/
+
 .main-body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -65,7 +68,7 @@ body{
     padding: 15px;
 }
 .box h1{
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 40px;
     margin: 0;
@@ -74,4 +77,261 @@ body{
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
+    color: #6C6C6C;
+
 }
+
+/*==== goal-part ====*/
+
+.goal-part{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 100px;  
+}
+
+.left-sec{
+    background: slategray;
+    width: auto;
+    height: 275px;
+    margin-right: 10px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    margin-top: -80px;
+
+}
+
+.left-sec h1{
+    color: black;
+
+}
+
+.left-sec p{
+    color:black
+    text-align:justify;
+}
+
+.left-sec button{
+    padding: 10px;
+    background: steelblue;
+    border-radius: 5px 10px 5px 10px;
+    box-shadow: 5px 5px 5px 0px;
+    margin-left: 70%;
+
+}
+
+.left-sec button:hover{
+    color: green;
+    font-weight: bold;
+    background: lightgreen;
+    transition: 1s ease;
+    margin-left: 60%;
+}
+
+.right-sec{
+    background: slategray;
+    width: auto;
+    height: 275px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    margin-top: -80px;
+}
+
+.right-sec h1{
+    color: black
+    overflow: hidden
+}
+
+.right-sec p{
+    color: #000;
+    text-align:justify;
+}
+
+.right-sec button{
+    margin-left: 75%;
+    padding: 10px;
+    background: steelblue;
+    border-radius: 10px 5px 10px 5px;
+    box-shadow: 5px 5px 5px 0px;
+}
+
+.right-sec button:hover{
+    color: green;
+    font-weight: bold;
+    background: lightgreen;
+    transition: 1s ease;
+}
+
+/*==== footer ====*/
+
+.foot-logo{
+    width: 483px;
+    height: 110px; 
+    margin: 158px auto 0;
+}
+.foot-logo img{
+    width: 100%;
+}
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.icon{
+    background-color:rgb(235, 231, 231);
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 6px;
+}
+
+.icon a{
+    height: 35px;
+    width: 35px;
+    color: #969BAB;  
+}
+
+.icon a i{
+    margin-top: 8px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    margin: 22px 0 63px;
+}
+
+.copyright h2{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/*==== Media Query Part ====*/
+
+@media (max-width:480px) {
+    .head{
+        display: flex;
+        flex-wrap: wrap;
+        background: #2D25A0;
+        height: 630px;
+    }
+    .left-head{
+        width: 100%;
+       margin-left: 0;
+        padding-top: 50px;
+        padding-left: 20px;
+        margin-bottom: 0;
+    }
+    .left-head h1{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 50px;
+        width: 263px;
+        color: #fff;
+       
+    }
+    .left-head a{
+        color: #fff;
+        padding: 10px 15px;
+        background: #E02C6D;
+        text-decoration: none;
+        margin-top: 30px;
+        font-size: 10px ;
+    }
+    .right-head{
+        width: 480px;
+        margin-top: 0;
+        padding-left: 20px;
+        padding-top: 60px;
+    }
+    .right-head img{
+       width: 350px;
+       height: 260px;
+       padding: 0 15px;
+    }
+
+    .main-body{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 25px;
+        margin:10px;
+        margin-top: 30px;
+    }
+    .main-body img{
+        width: 400px;
+    }
+    .box{
+        box-shadow:0px 0px 40px 0px #dad9d9fa;
+        padding: 10px;
+        width: 420px;
+        padding-left: 20px;
+    }
+    .box h1{
+        font-size: 28px;
+        font-weight: 900;
+        padding-top: 16px;
+    }
+    
+    .goal-part{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .left-sec{
+        background: slategray;
+        width: auto;
+        height: 350px;
+        margin-right: 10px;
+        padding: 0px 10px 80px;
+        border-radius: 10px;
+        margin-bottom: 160px;
+        margin-top: 50px;
+    }
+
+    .left-sec button{
+        padding: 10px;
+        background: steelblue;
+        border-radius: 5px 10px 5px 10px;
+        box-shadow: 5px 5px 5px 0px;
+        margin-left: 70%;
+    
+    }
+
+    .right-sec{
+        background: slategray;
+        width: auto;
+        height: 350px;
+        margin-right: 10px;
+        padding: 0px 10px 80px;
+        border-radius: 10px;
+    }
+
+    .right-sec button{
+        padding: 10px;
+        background: steelblue;
+        border-radius: 5px 10px 5px 10px;
+        box-shadow: 5px 5px 5px 0px;
+        margin-left: 70%;
+    
+    }
+
+    .foot-logo{
+        width: 280px;
+        height: 76px; 
+        margin: 80px auto 0;
+    }
+    .icon{
+        margin-right: 15px;
+    }
+    .copyright{
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
